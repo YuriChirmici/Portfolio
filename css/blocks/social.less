@@ -1,0 +1,25 @@
+.social {
+	margin-bottom: 42px;
+	display: flex;
+
+	@media @mobile-sm {
+		justify-content: center;
+
+		margin-bottom: 1.8rem;
+	}
+}
+
+.social__link {
+	margin-right: 10px;
+
+	transition: transform .2s linear;
+	&:hover {
+		transform: translateY(-6px);
+	}
+
+	@media @tablet {
+		width: 34px;
+		height: 34px;
+		margin-right: 7px;
+	}
+}
